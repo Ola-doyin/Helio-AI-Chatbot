@@ -65,6 +65,46 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+
+# GitHub Link
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        font-size: 20px;
+        z-index: 100;
+    }
+    .footer a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        color: #666;
+    }
+    </style>
+
+    <div class="footer">
+        <a href="https://github.com/Ola-doyin/Helio-AI-Chatbot.git" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# Font Awesome for GitHub icon
+st.markdown(
+    '<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">',
+    unsafe_allow_html=True
+)
+
+
+
 # --- Layout: 3 columns ---
 left, spacer, right = st.columns([6, 2, 6])
 
@@ -138,3 +178,4 @@ with right:
                 """,
                 unsafe_allow_html=True
             )
+
