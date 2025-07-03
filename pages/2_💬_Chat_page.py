@@ -47,11 +47,9 @@ if "user_input" in st.session_state and st.session_state["user_input"]:
     initial_prompt = st.session_state["user_input"]
     st.session_state.messages.append({"role": "user", "text": initial_prompt})
 
-    # first_call=True because this is the first message in the conversation
     reply = get_response(model, st.session_state.messages, first_call=True)
     st.session_state.messages.append({"role": "assistant", "text": reply})
-
-    st.session_state["user_input"] = ""  # Clear after processing
+    st.session_state["user_input"] = ""
 
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
@@ -69,11 +67,14 @@ with col1:
     )
 with col2:
     if st.button("Tap to ask your question"):
-        transcription = transcribe_from_mic()
-        st.session_state.messages.append({"role": "user", "text": transcription})
-        reply = get_response(model, st.session_state.messages, first_call=False)
-        st.session_state.messages.append({"role": "assistant", "text": reply})
-        st.rerun()
+        try:
+            transcription = transcribe_from_mic()
+            st.session_state.messages.append({"role": "user", "text": transcription})
+            reply = get_response(model, st.session_state.messages, first_call=False)
+            st.session_state.messages.append({"role": "assistant", "text": reply})
+            st.rerun()
+        except Exception as e:
+            st.warning("🎤 Voice input is not supported on this platform. Try typing your question instead.")
 
 # === Text Chat Input ===
 if prompt := st.chat_input("Type your question here..."):
