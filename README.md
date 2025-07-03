@@ -15,6 +15,7 @@ Experience the chatbot in action here: https://helio-ai-chatbot.streamlit.app/
 <br>
 
 ## ✨ Features at a Glance
+- 🎙 Speech to text interface — use voice activated prompts to ask your questions 
 - 🗣️ Natural conversational interface — chat freely about solar inverter systems and get clear, expert answers
 - 🔍 Context-aware Q&A — intelligently detects missing info and asks follow-up questions to refine recommendations
 - 🤖 Powered by Google Gemini API — delivering natural, accurate, and contextually relevant responses
