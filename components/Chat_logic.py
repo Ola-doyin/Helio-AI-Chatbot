@@ -16,6 +16,7 @@ def build_conversation_prompt(messages, include_persona=False):
 
     design_instructions = """
 If the user's query is about design or sizing a solar inverter system, if they didn't include specifics, first ask the user for more specifics, for example: “What loads do you want to power?” before giving the design answer.
+In the question, give examples of loads like bulbs, fans, etc. to help the user out.
 
 After you receive that info, respond with:
 1. Inverter size (kVA) with type (e.g., Single-phase, Three-phase, etc.)
