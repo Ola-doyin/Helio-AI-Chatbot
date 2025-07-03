@@ -7,12 +7,12 @@ Whether you’re planning a small residential setup or a more complex hybrid sys
 2. 🔋 Battery capacity planning — optimize storage based on usage and battery chemistry
 3. ☀️ Solar panel specification — get panel size and type recommendations for your site
 
-<br><br>
+<br>
 
 ## 🚀 Live Demo
 Experience the chatbot in action here: https://helio-ai-chatbot.streamlit.app/
 
-<br><br>
+<br>
 
 ## ✨ Features at a Glance
 - 🗣️ Natural conversational interface — chat freely about solar inverter systems and get clear, expert answers
@@ -22,7 +22,7 @@ Experience the chatbot in action here: https://helio-ai-chatbot.streamlit.app/
 - 🗂️ Basic chat history support — keeps recent interactions for smoother, more coherent replies
 - ⚡ Quick sizing & design guidance — practical, actionable insights that save time and reduce guesswork
 
-<br><br>
+<br>
 
 ## 🌍 Who Is This For?
 - Homeowners planning to install or upgrade solar systems
@@ -31,7 +31,7 @@ Experience the chatbot in action here: https://helio-ai-chatbot.streamlit.app/
 - Anyone interested in solar inverter system optimization
 - Anyone interested in building AI-chatbots
 
-<br><br>
+<br>
 
 ## HelioPal v.1
 This is just the first version. More updates will be made to add functionalities to the chatbot soon!
