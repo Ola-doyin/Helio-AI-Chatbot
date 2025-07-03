@@ -17,7 +17,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 st.set_page_config(page_title="HelioPal AI Chatbot", layout="centered")
 st.title("🔆 HelioPal Chatbot")
 st.markdown(
-    '<h3 style="margin-bottom: 50px; color: #666; font-size: 20px;">Ask me about anything solar — from sizing to simulation.</h3>',
+    '<h3 style="margin-bottom: 50px; color: #666; font-size: 20px;">Ask me about anything solar inverter systems — from sizing to simulation.</h3>',
     unsafe_allow_html=True
 )
 
