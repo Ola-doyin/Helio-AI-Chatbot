@@ -33,5 +33,5 @@ Experience the chatbot in action here: https://helio-ai-chatbot.streamlit.app/
 
 <br>
 
-## HelioPal v.1
+## 🌞HelioPal v.1
 This is just the first version. More updates will be made to add functionalities to the chatbot soon!
